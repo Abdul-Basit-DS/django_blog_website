@@ -1,56 +1,71 @@
-# Django Blog Project — Premium Course (Tech With Rathan)
+# Django Blog Website (Practice Project)
 
-**Welcome!**  
-This repository contains the source code for the *Django Blogging System* premium course by **Tech With Rathan**. This is a real-world, feature-rich blogging system built to teach practical Django — from models, templates and forms to permissions, dashboards and deployment.
+## 📌 Overview
+This is a Django-based blog website built for **learning and practice purposes**.  
+The project focuses on understanding how a real-world blogging system works using Django, including posts, categories, comments, authentication, and admin management.
 
----
-
-## What you’ll learn
-- Project structure & real-world folder layout  
-- Models: Blog, Category, Comment, User relations, slugs, media handling  
-- Forms: Create/Edit posts, user registration, comments  
-- Authentication & Authorization: Login, logout, Groups, Permissions, decorators  
-- Admin customizations & listings  
-- Dashboards for Editors / Managers with role checks  
-- Search, pagination, featured & recent posts  
-- File uploads (media), static files, and templates  
-- Deployment checklist and steps
-
-This course focuses on **practical features** used in production blogging systems and how to structure code for clarity and maintainability.
+The main goal of this project is to improve backend development skills and gain hands-on experience with Django features commonly used in production applications.
 
 ---
 
-## Features implemented
-- Multi-role system (Admin / Manager / Editor / Author)  
-- Create / Read / Update / Delete (CRUD) for posts & categories  
-- Unique slug generation & prepopulation  
-- Media (image) upload & configuration  
-- Comment system (only authenticated users can comment)  
-- Manager & Editor dashboards with counts and tables  
-- Granular permission checks (using Django Groups & Permissions + custom checks)  
-- Search feature with retained search term in textbox  
-- Deployment on PythonAnywhere
+## 🎯 What I Learned
+- Django project structure and app-based architecture  
+- Models, relationships, and database migrations  
+- Django templates and dynamic content rendering  
+- Forms handling and user input  
+- Authentication and authorization basics  
+- Admin panel customization  
+- Media file (image) upload and static files handling  
+- URL routing and slug-based pages  
+- Debugging and fixing common Django errors  
 
 ---
 
-## Requirements
-- Python 3.10+ (recommended)  
-- Django 4.x (see `requirements.txt`) - always use latest version 
-- A virtual environment tool (`venv` / `virtualenv`)  
-- PostgreSQL / MySQL or SQLite for development
-- (Optional) nginx / gunicorn for production — [contact me](https://techwithrathan.com/contact/) for advanced deployments.
+## ✨ Features
+- Blog posts with categories  
+- Featured and recent posts section  
+- Comment system (authenticated users only)  
+- Django admin panel for content management  
+- Image upload support for blog posts  
+- Category-wise blog listing  
+- Responsive UI using Bootstrap  
 
-## 🚀 Join My 8-Week Backend Developer Program  
-Become industry-ready in 8 weeks!  
-👉 [Enroll here](https://techwithrathan.com/django-live/)
+---
 
-## ❤️ Support My Work
+## 🛠️ Technologies Used
+- **Python 3**
+- **Django**
+- **HTML, CSS, Bootstrap**
+- **SQLite** (development database)
+- **Git & GitHub**
 
-<a href="https://www.youtube.com/@rathankumar">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" width="120">
-</a>
+---
 
-If you like this project, please support me by subscribing to my channel:  
-👉 **Tech With Rathan** — https://www.youtube.com/@rathankumar
+## 🎓 Project Purpose
+This project is created **only for educational and practice purposes**.  
+It is not intended for commercial use.  
+The focus is on learning Django by building a functional blog application step by step.
 
-All the best.
+---
+
+## 🚀 How to Run the Project
+
+```bash
+# create virtual environment
+python -m venv venv
+
+# activate virtual environment
+venv\Scripts\activate
+
+# install dependencies
+pip install -r requirements.txt
+
+# apply migrations
+python manage.py makemigrations
+python manage.py migrate
+
+# run server
+python manage.py runserver
+
+Open your browser and visit:
+http://127.0.0.1:8000
